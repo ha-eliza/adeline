@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Настройка всего трека */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #24292E;
+}
+
+/* Настройка ползунка */
+::-webkit-scrollbar-thumb {
+    background-color: #FFF8E8;
+    border-radius: 100px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+}
+
+
+.cinzel-decorative-regular {
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.tenor-sans-regular {
+    font-family: "Tenor Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/**/
+/* Стили для того, чтобы бегунки можно было нажимать, когда они наложены */
+input[type=range]::-webkit-slider-thumb {
+    pointer-events: all;
+    width: 18px;
+    height: 18px;
+    appearance: none;
+    border: 3px solid white;
+    background: black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[type=range]::-moz-range-thumb {
+    pointer-events: all;
+    width: 18px;
+    height: 18px;
+    background: black;
+    border: 3px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/**/
+
+.mySwiper {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+
+.swiper-slide {
+    background: #FDF9F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-pagination-fraction {
+    position: static !important;
+    width: auto !important;
+    display: flex !important;
+    align-items: baseline;
+    color: #fff !important;
+    letter-spacing: 0.1em;
+}
+
+.swiper-pagination-current,
+.my-separator {
+    font-size: 32px;
+    font-family: "Cinzel Decorative", serif;
+}
+
+.swiper-button-next,
+.swiper-button-prev-two,
+.swiper-button-next-two,
+.swiper-button-prev-one,
+.swiper-button-next-one,
+.swiper-button-prev {
+    position: static !important;
+    margin: 0 !important;
+    cursor: pointer;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after,
+.swiper-button-next-one:after,
+.swiper-button-prev-one:after,
+.swiper-button-next-two:after,
+.swiper-button-prev-two:after {
+    display: none !important;
+}
+
+.contents {
+    display: contents;
+}
+
+.swiper-pagination-one .swiper-pagination-total,
+.swiper-pagination-two .swiper-pagination-total,
+.swiper-pagination-three .swiper-pagination-total {
+    font-family: "Cinzel Decorative", serif;
+}
+
+.line {
+    width: 120px;
+    height: 1px;
+    background-color: #ffffff;
+    float: left;
+    transform: rotate(-40deg);
+    margin: -10px 0 0 0px;
+}
+
+.mline {
+    width: 85px;
+    height: 1px;
+    background-color: #ffffff;
+    float: left;
+    transform: rotate(-40deg);
+    margin: 0;
+}
+
+
+.statsSwiper .swiper-slide {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: inherit;
+}
+
+.stats-next, .stats-prev {
+    height: auto;
+    padding: 0px 20px;
+
+    border: 1px solid #FFF8E8;
+    border-radius: 50%;
+}
